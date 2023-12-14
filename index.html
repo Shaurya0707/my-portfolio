@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/7ce25ae635.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I am <span>Shaurya</span><br>Fullstack Web developer</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------ABOUT------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/myphoto1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am currently pursuing Computer Science and Engineering from SRM University, equipped with
+                        strong knowledge in C, C++, Python, and frontend web development. With a passion for
+                        problem-solving and excellent skills in Data Structures and Algorithms, I strive for innovative
+                        solutions. Besides my technical abilities, I stay well-informed about the latest geopolitical
+                        issues and enjoy watching web series and listening to podcasts. Sports, particularly cricket and
+                        football, fascinate me, and I find solace in both Hindi and English music. Known for my
+                        consistency and punctuality, I approach daily activities with dedication and a focus on
+                        achieving goals</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C Language</span><br>
+                                I possess close to advanced proficiency in the C programming language.</li>
+                            <li><span>C++ Language</span><br>
+                                I have advanced proficiency in the C++ programming language.</li>
+                            <li><span>Python Language</span><br>I have intermediate proficiency in the Python
+                                programming language</li>
+                            <li><span>Frontend Web Development</span><br>
+                                I possess advanced skills in frontend web development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web development</span><br>Currently I only possess personal project experience
+                            </li>
+                            <!-- <li><span>EEE</span><br>EEE</li>
+                            <li><span>FFF</span><br>FFF</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Class 10th</span><br>I have
+                                achieved over 75% marks in Class 10th ICSE board</li>
+                            <li><span>Class 12th</span><br>I have I have
+                                achieved over 70% marks in Class 12th ISC board</li>
+                            <li><span>Computer Science Engineer</span><br>Proudly maintaining a stellar CGPA of 8.99 in
+                                my engineering studies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------Services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Focus</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>I specialize in fullstack web development, creating visually appealing and user-friendly
+                        interfaces. With expertise in HTML, CSS, JavaScript,NodeJS and express I bring designs to life and ensure
+                        seamless functionality across different devices.</p>
+                    <a href="https://github.com/Shaurya0707?tab=repositories">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Problem Solving</h2>
+                    <p>Proficient in problem solving using C++ and Python, with a strong grasp of algorithms and data
+                        structures.
+                        Skilled in crafting efficient and elegant solutions to complex programming challenges.</p>
+                    <a href="https://auth.geeksforgeeks.org/user/shauryasify4t">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>DSA Projects</h2>
+                    <p>.Demonstrated expertise in DSA through successful completion of diverse projects, highlighting
+                        strong analytical thinking and logical reasoning skills.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Drum Kit</h3>
+                        <p>Created a drum kit which consists of different instruments, which when clicked produces their unique sounds</p>
+                        <a href="https://shaurya0707.github.io/drum-Kit/"><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Simon game</h3>
+                        <p>This is a very intrsting game, in which player has to memorise previous pattern and add it to the next shown pattern to proceed for next stage.</p>
+                        <a href="https://shaurya0707.github.io/simon-game/"><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Dice Game</h3>
+                        <p>Created an engaging game in which two dices a rolled. A dice which shows highest number wins the game.</p>
+                        <a href="https://shaurya0707.github.io/dice-Game/"><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ---------------contact-------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shauryasingh80c5@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>7379703417</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shaurya-singh-6a88ba1ba"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Shaurya0707"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://twitter.com/ShauryaSinghTh4"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100010583864917"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+                    <a href="image/myresume.pdf" download class="btn btn2">Download resume</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Not Submitted</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Shaurya. With <i class="fa-sharp fa-solid fa-heart" class="love"></i></p>
+        </div>
+    </div>
+
+    <!-- ---------------javaScript--------------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbye0b_jI8nvswkOf0dy-1I85c7Z73yBxBq0yT6zYWHl8mA0BLspq5f_xFdhdraESNkP/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
